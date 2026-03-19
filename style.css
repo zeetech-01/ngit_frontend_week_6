@@ -1,0 +1,136 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1e293b;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+ img{
+  height: 10vh;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  color: #fff;
+}
+
+.header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+}
+
+/* TEAM SECTION */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-role {
+  color: #6366f1;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card-bio {
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* simple mobile version */
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
